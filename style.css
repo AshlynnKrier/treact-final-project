@@ -1291,11 +1291,14 @@ FOOTER ↓
 */
 
 footer {
-    padding: 34px 32px;
     background-color: rgb(100, 21, 255);
     margin-bottom: -32px;
     position: relative;
     overflow: hidden;
+}
+
+footer {
+  padding: 20px 32px;
 }
 
 .footer__blob--1,
@@ -1465,7 +1468,7 @@ MOBILE RESPONSIVENESS ↓
         align-items: center;
     }
     footer {
-        padding: 80px 32px;
+        padding: 20px 32px;
     }
 }
 
