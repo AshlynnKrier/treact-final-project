@@ -1193,6 +1193,10 @@ START / CALL TO ACTION ↓
   transform: translate(5rem, -16rem);
 }
 
+#start .container {
+  padding-bottom: 0;
+}
+
 .start__container {
     padding: 96px 0;
     width: 100%;
@@ -1201,6 +1205,10 @@ START / CALL TO ACTION ↓
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.container {
+  padding: 96px 0;
 }
 
 .start__row {
@@ -1291,14 +1299,11 @@ FOOTER ↓
 */
 
 footer {
+    padding: 20px 32px;
     background-color: rgb(100, 21, 255);
-    margin-bottom: -32px;
+    margin-bottom: 0px;
     position: relative;
     overflow: hidden;
-}
-
-footer {
-  padding: 20px 32px;
 }
 
 .footer__blob--1,
@@ -1433,14 +1438,11 @@ footer {
     width: 16px;
 }
 
-/* HELP MENTORS!! */
-
-/* 
+/*
 
 MOBILE RESPONSIVENESS ↓
 
 */
-
 
 @media(max-width: 1280px) {
     header .row {
@@ -1488,14 +1490,94 @@ MOBILE RESPONSIVENESS ↓
 }
 
 @media(max-width: 640px) {
-    .container {
+  .container {
         padding: 80px 0;
-    }
-    .nav__logo {
+  }
+  .nav__logo {
         margin: 8px 0;
         padding-bottom: 4px;
-    }
-    main {
+  }
+  main {
         margin-bottom: 80px;
-    }
+  }
+
+  header .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__title {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .header__para {
+    text-align: center;
+  }
+
+  .header__description {
+  width: 100%;
+  max-width: 100%;
+  }
+
+  #features .features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  }
+
+  #features .feature {
+  width: 100%;
+  max-width: 320px;
+  }
+
+  #quality .section__title {
+    font-size: 35px;
+  }
+
+  #quality .section__para {
+align-items: center;
+  }
+
+  .steps__description {
+    padding: 30px 0;
+    padding-left: 20px;
+  }
+
+  .values__description {
+    width: 75%;
+  }
+
+  .values__list {
+    flex-direction: column-reverse;
+  }
+
+  .plans {
+    flex-direction: column;
+  }
+
+  .testimonials__description {
+    padding-left: 20px;
+  }
+
+  .testimonial__bottom {
+    display: grid;
+  }
+
+  .start__title {
+    font-size: 20px;
+  }
+
+  .start__buttons {
+    display: table-column
+  }
+
+  .footer__columns {
+    justify-content: space-around
+  }
+
+  .footer__bottom {
+    align-items: baseline;
+  }
 }
